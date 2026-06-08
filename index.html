@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proposta — Sistema CRM + Automações</title>
+<style>
+:root{--bg:#0f1115;--paper:#fff;--ink:#1a1d24;--muted:#6b7280;--line:#e5e7eb;--accent:#4f46e5;--accent2:#eef2ff;--ok:#059669;--warn:#d97706}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);font-family:-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);line-height:1.55;padding:32px 16px}
+.wrap{max-width:880px;margin:0 auto;background:var(--paper);border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.hero{padding:48px 40px 36px;background:linear-gradient(135deg,#111827,#1f2937);color:#fff}
+.tag{display:inline-block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#a5b4fc;border:1px solid #4f46e5;padding:4px 12px;border-radius:999px;margin-bottom:18px}
+.hero h1{font-size:30px;font-weight:800;line-height:1.15;margin-bottom:10px}
+.hero p{color:#cbd5e1;font-size:15px;max-width:560px}
+.sec{padding:34px 40px;border-bottom:1px solid var(--line)}
+.sec h2{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
+.sec h3{font-size:19px;font-weight:700;margin-bottom:8px}
+.lead{color:var(--muted);font-size:14px;margin-bottom:20px}
+.grid{display:grid;gap:12px}
+.mod{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border:1px solid var(--line);border-radius:10px;font-size:14px}
+.mod b{display:block;font-size:14px}
+.mod span{color:var(--muted);font-size:13px}
+.dot{flex:0 0 auto;width:9px;height:9px;border-radius:50%;margin-top:6px}
+.f1{background:var(--accent)}.f2{background:#0ea5e9}.f3{background:#a855f7}
+.phase{border:1px solid var(--line);border-radius:12px;padding:20px;margin-bottom:14px}
+.phase.cur{background:var(--accent2);border-color:#c7d2fe}
+.phase h3{display:flex;justify-content:space-between;align-items:center}
+.badge{font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;background:var(--accent);color:#fff;letter-spacing:.05em}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:12px 10px;border-bottom:1px solid var(--line)}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+td.r,th.r{text-align:right}
+.tot{font-weight:800;font-size:16px;color:var(--accent)}
+.pill{display:inline-block;font-size:12px;padding:2px 8px;border-radius:6px;background:var(--accent2);color:var(--accent);font-weight:600}
+.note{background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:14px 16px;font-size:13px;color:#92400e;margin-top:14px}
+ul.adi{list-style:none;display:grid;gap:8px}
+ul.adi li{padding:10px 14px;border:1px dashed var(--line);border-radius:8px;font-size:14px}
+.foot{padding:26px 40px;background:#f9fafb;font-size:12px;color:var(--muted)}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-top:14px}
+.legend span{display:flex;align-items:center;gap:6px}
+@media(max-width:600px){.hero,.sec{padding:26px 22px}.hero h1{font-size:24px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="hero">
+<span class="tag">Proposta Comercial · Rascunho</span>
+<h1>Sistema CRM + Automações Inteligentes</h1>
+<p>Plataforma web sob medida para gestão de locação: clientes, leads, agenda automática, financeiro e camada de IA. Entrega faseada para caber no orçamento.</p>
+</div>
+<div class="sec">
+<h2>O que será construído</h2>
+<h3>12 módulos, entregues por fases</h3>
+<p class="lead">Cada módulo entra na fase certa para priorizar o que gera valor primeiro.</p>
+<div class="grid">
+<div class="mod"><span class="dot f1"></span><div><b>Cadastro de clientes</b><span>Ficha completa, histórico, status, segmentação</span></div></div>
+<div class="mod"><span class="dot f1"></span><div><b>Controle de leads + funil</b><span>Captação, etapas de venda, conversão</span></div></div>
+<div class="mod"><span class="dot f1"></span><div><b>Interações / timeline</b><span>Histórico de cada contato e atendimento</span></div></div>
+<div class="mod"><span class="dot f1"></span><div><b>Agenda + auto-distribuição</b><span>Escalonamento automático de trabalho para a equipe</span></div></div>
+<div class="mod"><span class="dot f1"></span><div><b>Cadastro de pessoas e time</b><span>Usuários, permissões, papéis</span></div></div>
+<div class="mod"><span class="dot f1"></span><div><b>Dashboard</b><span>Visão geral de operação e indicadores</span></div></div>
+<div class="mod"><span class="dot f2"></span><div><b>Financeiro</b><span>Entradas, saídas, contas a receber, fluxo</span></div></div>
+<div class="mod"><span class="dot f2"></span><div><b>Analítico financeiro mensal</b><span>Comparativo mês a mês, receita recorrente</span></div></div>
+<div class="mod"><span class="dot f2"></span><div><b>Relatórios</b><span>Exportação e relatórios operacionais/financeiros</span></div></div>
+<div class="mod"><span class="dot f2"></span><div><b>Geolocalização</b><span>Mapa de clientes por região</span></div></div>
+<div class="mod"><span class="dot f2"></span><div><b>Marketing</b><span>Campanhas, segmentos, base de contatos</span></div></div>
+<div class="mod"><span class="dot f3"></span><div><b>IA: previsão de vendas</b><span>Projeção por clientes fixos + scoring de leads + insights</span></div></div>
+</div>
+<div class="legend">
+<span><span class="dot f1"></span>Fase 1 — MVP</span>
+<span><span class="dot f2"></span>Fase 2 — Expansão</span>
+<span><span class="dot f3"></span>Fase 3 — IA</span>
+</div>
+</div>
+
+<div class="sec">
+<h2>Como será feito</h2>
+<div class="phase cur">
+<h3>Fase 1 — MVP (núcleo do CRM) <span class="badge">COMEÇA AQUI</span></h3>
+<p class="lead">Clientes, leads, interações, agenda com auto-distribuição, equipe e dashboard. Sistema já utilizável no dia a dia.</p>
+<span class="pill">10 a 14 dias</span>
+</div>
+<div class="phase">
+<h3>Fase 2 — Expansão</h3>
+<p class="lead">Financeiro, analítico mensal, relatórios, geolocalização e marketing.</p>
+<span class="pill">8 dias úteis</span>
+</div>
+<div class="phase">
+<h3>Fase 3 — Camada de IA</h3>
+<p class="lead">Previsão de vendas por recorrência, scoring de leads, distribuição inteligente e insights automáticos.</p>
+<span class="pill">8 dias úteis</span>
+</div>
+</div>
+<div class="sec">
+<h2>Tecnologia</h2>
+<h3>Stack moderna e de baixo custo</h3>
+<p class="lead">Escolhida para reduzir custo de hospedagem e acelerar entrega.</p>
+<div class="grid">
+<div class="mod"><span class="dot f1"></span><div><b>Web app responsivo</b><span>Next.js — funciona no PC e celular, sem app separado</span></div></div>
+<div class="mod"><span class="dot f1"></span><div><b>Banco + login</b><span>Supabase (PostgreSQL) &mdash; alternativa: Notion</span></div></div>
+<div class="mod"><span class="dot f1"></span><div><b>Hospedagem barata</b><span>Vercel + Supabase &mdash; alternativa: Hostinger VPS</span></div></div>
+<div class="mod"><span class="dot f2"></span><div><b>Mapa</b><span>Mapbox / Leaflet para geolocalização</span></div></div>
+<div class="mod"><span class="dot f3"></span><div><b>IA</b><span>OpenAI / Gemini para previsão e insights</span></div></div>
+</div>
+</div>
+
+<div class="sec">
+<h2>Investimento</h2>
+<h3>Custos recorrentes do cliente</h3>
+<p class="lead">Valor único do projeto + custos mensais de operação.</p>
+<div class="phase cur" style="text-align:center;padding:30px">
+<h3 style="display:block;font-size:16px;color:var(--muted);font-weight:600;margin-bottom:6px">Valor do projeto completo</h3>
+<div class="tot" style="font-size:42px;line-height:1">R$ 2.500</div>
+<p class="lead" style="margin:10px 0 0">Sistema completo, valor fechado.</p>
+</div>
+<table style="margin-top:22px">
+<thead><tr><th>Custos recorrentes (do cliente)</th><th class="r">Mensal</th></tr></thead>
+<tbody>
+<tr><td>Hospedagem + banco (Vercel/Supabase)</td><td class="r">R$ 0 – 200</td></tr>
+<tr><td>Mapa + IA (conforme uso)</td><td class="r">R$ 100 – 300</td></tr>
+<tr><td>Manutenção e suporte (opcional)</td><td class="r">R$ 300 – 600</td></tr>
+</tbody>
+</table>
+</div>
+<div class="sec">
+<h2>Adicionais possíveis</h2>
+<h3>Upsells para evoluir o sistema</h3>
+<ul class="adi">
+<li>Integração com WhatsApp (atendimento + notificações automáticas)</li>
+<li>Gateway de pagamento e cobrança recorrente automática</li>
+<li>Assinatura digital de contratos de locação</li>
+<li>Portal do cliente (cliente acompanha pedidos/faturas)</li>
+<li>App mobile dedicado (PWA ou nativo)</li>
+<li>BI avançado e relatórios personalizados</li>
+<li>Automações n8n (lembretes, follow-up de leads, alertas)</li>
+</ul>
+</div>
+
+<div class="sec">
+<h2>Premissas e pontos a confirmar</h2>
+<div class="note" style="background:#eef2ff;border-color:#c7d2fe;color:#3730a3">
+<b>Assumimos:</b> plataforma web responsiva, uso de 1 empresa (o cliente), equipe pequena, verba inicial limitada → entrega faseada.
+</div>
+<div class="note">
+<b>A confirmar com o cliente:</b><br>
+• O que ele aluga exatamente (equipamento, espaço, serviço?) — afina agenda e geo<br>
+• Quantos usuários vao acessar o sistema<br>
+• Precisa emitir nota fiscal / integrar com financeiro existente?<br>
+• Volume de clientes/leads esperado<br>
+• Tem identidade visual (logo, cores) para o painel?
+</div>
+</div>
+
+<div class="foot">
+<b>Proposta CRM + Automações</b> · Rascunho de estimativa — valores e prazos a validar após definição de escopo final.<br>
+Modelo recomendado: pagamento por fase · Início sugerido pela Fase 1 (MVP).
+</div>
+</div>
+</body>
+</html>
